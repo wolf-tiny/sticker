@@ -1,0 +1,201 @@
+#stickyArea form{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+}
+/* #stickyArea form textarea{
+    resize: none;
+    border: 1px solid rgb(157, 173, 133);
+    min-width: 100%;
+    max-width: 100%;
+    outline: none;
+    height: 100px;
+    padding: 10px;
+} */
+#stickyArea form input[type="submit"]{
+    width:100% !important;
+}
+#stickyArea label, button.clear {
+    text-align: center;
+}
+#stickyArea .noteBox{    
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    height: 250px;
+    width:300px;
+    padding: 40px 0 0 0;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+
+    /* border: dotted 2px lightgrey; */
+}
+#stickyArea .noteBox .noteText{
+    width: 100%;
+    height: 100%;
+    white-space: pre-wrap;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+#stickyArea .noteBox .optionArea{  
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #00000090;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white; 
+    display: none;   
+}
+#stickyArea .option2, #stickyArea .option1{
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+}
+.formArea {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 100;
+}
+#stickyArea .option2 button{
+    justify-content: center;
+}
+#stickyArea .noteBox .optionArea div{
+   flex: 1;
+   height: 100%;
+   text-align: center;
+   padding: 9px;
+}
+
+#stickyArea .noteBox .optionArea svg {
+    vertical-align: middle;
+    width: 17px;
+}
+
+#stickyArea .noteBox:hover .optionArea{    
+   display: flex;
+}
+
+#stickyArea .noteBox:hover .pin{    
+    display: none;
+}
+
+#canvas {
+    background: white;
+    margin: auto;
+    text-align: center; 
+    display: block;
+    /* width: 60%; */
+    border-radius: 5px 5px 0px 0px;
+    margin-top: 7px;
+}
+.drawCanvasOptions{
+    display: flex;
+    flex-direction: row;
+    width:40%;
+    justify-content: center;
+    margin:auto;
+    margin-top: 10px; 
+    text-align: center;
+       
+}
+.drawCanvasOptions button{
+    border: none;
+    padding: 10px 15px;
+    outline: none;  
+    background-color: #6eb39e; 
+    color: white; 
+    margin-left: 50px;    
+}
+.drawCanvasOptions select{
+    padding: 6px 10px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) { 
+   
+}
+
+textarea::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+background: #00000050;
+}
+
+div.optionArea > div {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+div.gold {
+    background-color: #ffeb3b !important;
+}
+
+div.gold > textarea {
+    color: black;
+}
+
+div.pink {
+    background-color: #e91e63 !important;
+}
+
+div.pink > textarea {
+    color: white;
+}
+
+div.red {
+    background-color: #de0c00 !important;
+}
+
+div.red > textarea {
+    color: white;
+}
+
+div.gray {
+    background-color: #aeaeae !important;
+}
+
+div.gray > textarea {
+    color: white;
+}
+
+div.btns {
+    text-align: right;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.btns > button {
+    width: 45%;
+}
+
+img.pin {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+textarea.sticky-input {
+    border:none;
+    outline: none;
+    resize: none;
+    padding:15px;
+    background: lightyellow;
+    border-radius: 5px;
+    width: 100%;
+}
